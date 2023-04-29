@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "projecttestcase",
+    "test": "projecttestcase.js",
     "server": "node index.js"
   },
   "keywords": [],
