@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node --exec babel-node projecttestcase.js",
+    "test": "node projecttestcase.js",
     "server": "node index.js"
   },
   "keywords": [],
