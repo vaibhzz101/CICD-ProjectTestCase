@@ -1,28 +1,11 @@
-name: Test Suite
-
 on: push
-
 jobs:
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: '14.x'
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Run test suite
-      run: npm test
-
-    - name: Upload test results
-      uses: actions/upload-artifact@v2
-      with:
-        name: test-results
-        path: ../projecttestcase.js
+    fourth-job: 
+       runs-on: ubuntu-latest
+       steps: 
+            - run: node --version
+            - run: npm --version
+            - uses: actions/checkout@v3
+            - run: npm install
+            - run: node index.js
+            - run: npm test . --fix
